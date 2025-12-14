@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shwapno Super Shop</title>
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif;}
+:root{--primary:#d50000; --dark:#222; --light:#f4f4f4;}
+body{background:var(--light);} 
+header{background:var(--primary); color:white; text-align:center; padding:25px 10px;}
+nav{background:#333;}
+nav ul{display:flex; justify-content:center; list-style:none;}
+nav li{margin:0 15px;}
+nav a{color:white; text-decoration:none; padding:14px 8px; display:block;}
+nav a:hover{background:#555;}
+.hero{background:url('https://i.imgur.com/f9kJ0Ro.jpeg') no-repeat center/cover; height:320px; display:flex; align-items:center; justify-content:center; text-align:center;}
+.hero h2{color:white; background:rgba(0,0,0,0.6); padding:12px 25px; border-radius:6px; font-size:2rem;}
+section{padding:40px 20px; max-width:1100px; margin:auto;}
+h2.section-title{text-align:center; margin-bottom:25px; color:var(--dark); font-size:28px;}
+.product-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:20px;}
+.card{background:white; border-radius:10px; box-shadow:0 3px 6px rgba(0,0,0,0.2); text-align:center; padding-bottom:15px; transition:0.3s;}
+.card:hover{transform:scale(1.03);} 
+.card img{width:100%; border-radius:10px 10px 0 0;}
+.card h3{margin:12px 0 6px;}
+.card p{color:gray;}
+.info-box{background:white; padding:25px; border-radius:10px; box-shadow:0 3px 6px rgba(0,0,0,0.1); font-size:17px; line-height:1.7;}
+footer{background:var(--dark); color:white; text-align:center; padding:15px 10px;} 
+form{background:white; padding:25px; border-radius:10px; box-shadow:0 3px 6px rgba(0,0,0,0.1); max-width:600px; margin:auto;}
+form label{display:block; margin:12px 0 5px; font-weight:bold;}
+form input, form select, form textarea{width:100%; padding:10px; border:1px solid #ccc; border-radius:5px;}
+form button{background:var(--primary); color:white; border:none; padding:12px 20px; margin-top:15px; border-radius:5px; cursor:pointer; font-size:16px;}
+form button:hover{background:#b30000;}
+
+/* Updated Image Size */
+.header-image{width:220px; height:auto; display:block; margin:10px auto; border-radius:10px; box-shadow:0 3px 6px rgba(0,0,0,0.2);} 
+.shop-image{width:50%; height:auto; max-height:200px; display:block; margin:0 auto 15px auto; border-radius:10px; box-shadow:0 3px 6px rgba(0,0,0,0.2);} 
+
+@media(max-width:600px){nav ul{flex-direction:column;} .hero h2{font-size:1.5rem;} .shop-image{width:90%; max-height:200px;} .header-image{width:100px;}} 
+
+@media(max-width:600px){nav ul{flex-direction:column;} .hero h2{font-size:1.5rem;} .shop-image{width:90%; max-height:200px;}}
+</style>
+</head>
+
+<body>
+
+<header>
+<img class="header-image" src="shop image.jpeg" alt="Shwapno Super Shop Dhanmondi">
+<h1>Shwapno Super Shop</h1>
+<p>Dhanmondi Branch – Fresh, Quality & Affordable</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#order">Order Online</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div id="home" class="hero">
+<h2>Welcome to Shwapno Super Shop Dhanmondi</h2>
+</div>
+
+<section id="products">
+<h2 class="section-title">Our Featured Products</h2>
+<div class="product-grid">
+
+<div class="card">
+<img src="Premium Rice.jpeg" alt="Premium Rice">
+<h3>Premium Rice</h3>
+<p>BDT 70 / kg</p>
+</div>
+
+<div class="card">
+<img src="Fresh vegetables.jpeg" alt="Fresh Vegetables">
+<h3>Fresh Vegetables</h3>
+<p>BDT 20 – 200</p>
+</div>
+
+<div class="card">
+<img src="Snacks and Chips.jpeg" alt="Snacks & Chips">
+<h3>Snacks & Chips</h3>
+<p>BDT 10 – 50</p>
+</div>
+
+<div class="card">
+<img src="download.jpeg" alt="Sugar">
+<h3>Dhanmondi Sugar</h3>
+<p>BDT 55 / kg</p>
+</div>
+
+<div class="card">
+<img src="Fresh milk.jpeg" alt="Fresh Milk">
+<h3>Fresh Milk</h3>
+<p>BDT 80 / liter</p>
+</div>
+
+<div class="card">
+<img src="soyabin oiiiil.jpeg" alt="Soyabean Oil">
+<h3>Soyabean Oil</h3>
+<p>BDT 170 / liter</p>
+</div>
+
+<div class="card">
+<img src="cookis and biscuits.jpeg" alt="Cookies & Biscuits">
+<h3>Cookies & Biscuits</h3>
+<p>BDT 20 – 120</p>
+</div>
+
+<div class="card">
+<img src="Fresh Fruits.jpeg" alt="Fresh Fruits">
+<h3>Fresh Fruits</h3>
+<p>BDT 120 – 300</p>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+
+<div class="info-box">
+Shwapno Super Shop (Dhanmondi Branch) is a trusted grocery store in Dhaka.
+We provide fresh vegetables, rice, oil, fruits, snacks, dairy, and household essentials.
+Our goal is to make shopping easy, affordable and quality-driven.
+</div>
+</section>
+
+<section id="order">
+<h2 class="section-title">Order Online</h2>
+<form>
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" placeholder="Your full name" required>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX" required>
+
+<label for="address">Delivery Address</label>
+<textarea id="address" name="address" placeholder="Your delivery address" rows="3" required></textarea>
+
+<label for="product">Select Product</label>
+<select id="product" name="product" required>
+<option value="">--Choose Product--</option>
+<option value="premium_rice">Premium Rice</option>
+<option value="vegetables">Fresh Vegetables</option>
+<option value="snacks">Snacks & Chips</option>
+<option value="sugar">Dhanmondi Sugar</option>
+<option value="milk">Fresh Milk</option>
+<option value="oil">Soyabean Oil</option>
+<option value="biscuits">Cookies & Biscuits</option>
+<option value="fruits">Fresh Fruits</option>
+</select>
+
+<label for="quantity">Quantity</label>
+<input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+<button type="submit">Place Order</button>
+</form>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+<div class="info-box">
+<p><strong>Address:</strong> Shwapno Super Shop, Dhanmondi, Dhaka</p>
+<p><strong>Phone:</strong> +880 1XXXXXXXXX</p>
+<p><strong>Email:</strong> shwapno@support.com</p>
+</div>
+</section>
+
+<footer>
+© 2025 Shwapno Super Shop — All Rights Reserved
+</footer>
+
+</body>
+</html>
